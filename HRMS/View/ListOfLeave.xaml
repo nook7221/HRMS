@@ -65,30 +65,6 @@
                                        HorizontalOptions="End"
                                        Margin="0,0,8,0"/>
 
-                                <Label Text="Number of the day"
-                                       Grid.Column="0"
-                                       Grid.Row="3"
-                                       HorizontalOptions="Start"
-                                       Margin="8,0,0,0"/>
-
-                                <Label Text="{Binding CountDay}"
-                                       Grid.Column="1"
-                                       Grid.Row="3"
-                                       HorizontalOptions="End"
-                                       Margin="0,0,8,0"/>
-
-                                <Label Text="Note"
-                                       Grid.Column="0"
-                                       Grid.Row="4"
-                                       HorizontalOptions="Start"
-                                       Margin="8,0,0,0"/>
-
-                                <Label Text="{Binding Note}"
-                                       Grid.Column="1"
-                                       Grid.Row="4"
-                                       HorizontalOptions="End"
-                                       Margin="0,0,8,0"/>
-
                                 <Label Text="Status"
                                        Grid.Column ="0"
                                        Grid.Row="5"

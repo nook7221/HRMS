@@ -57,3 +57,4 @@ C:\Users\Mhee\Downloads\HRMS\HRMS\HRMS\obj\Debug\netstandard2.0\HRMS.dll
 C:\Users\Mhee\Downloads\HRMS\HRMS\HRMS\obj\Debug\netstandard2.0\HRMS.pdb
 C:\Users\Mhee\Downloads\HRMS\HRMS\HRMS\obj\Debug\netstandard2.0\HRMS.View.ListOfLeave.xaml.g.cs
 C:\Users\Mhee\Downloads\HRMS\HRMS\HRMS\obj\Debug\netstandard2.0\HRMS.View.Benefits.xaml.g.cs
+C:\Users\Mhee\Downloads\HRMS\HRMS\HRMS\obj\Debug\netstandard2.0\HRMS.View.OnLeaveDetailScreen.xaml.g.cs
