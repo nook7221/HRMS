@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMS.View.LoginScreen"
+             BackgroundImage="star">
+    <AbsoluteLayout Margin="20"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+        <StackLayout>
+            <Label Text="LOGO EXTRA" FontSize="40" 
+                   TextColor="White" 
+                   Style="{DynamicResource LabelStyle}" 
+                   HeightRequest="70" 
+                   HorizontalOptions="CenterAndExpand"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--
+                <ContentView HeightRequest="220" 
+                             WidthRequest="200"
+                             Grid.Row="0" 
+                             Grid.Column="0"
+                             Grid.ColumnSpan="2" 
+                             Padding="0,20,0,3">
+                    <Image Source="" Aspect="AspectFit" />
+                </ContentView> -->
+
+                <Entry 
+                       x:Name="MainUser"
+                       Placeholder="Enter Your Username" 
+                       PlaceholderColor="White"
+                       Grid.Row="2" 
+                       Grid.Column="0" 
+                       Grid.ColumnSpan="2" 
+                       TextColor="White"
+                       FontSize="Small"  
+                       Style="{DynamicResource EntryStyle}"
+                      />
+                <Entry 
+                       x:Name="MainPassword"
+                       IsPassword="true" 
+                       Placeholder="Enter Your Password"
+                       PlaceholderColor="#FFFFFF"
+                       Grid.Row="3" 
+                       Grid.Column="0" 
+                       Grid.ColumnSpan="2" 
+                       TextColor="White"
+                       FontSize="Small"
+                       Style="{DynamicResource EntryStyle}"
+                       />
+
+                <Button 
+                        Clicked="btn_ClickSiginEx"
+                        TextColor="#3ABCC7"
+                        BorderColor="#3ABCC7"
+                        BorderWidth="0.8"
+                        Text="Sign In" 
+                        Grid.Row="5" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="2" 
+                      />
+
+
+                <Label Text="Rememberme"
+                       Grid.Row="4"
+                       Grid.Column="0"
+                       FontSize="Small"
+                       TextColor="White"
+                       Style="{DynamicResource LabelStyle}"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
+                <Switch x:Name="rememberSwitch" IsEnabled="True" IsToggled="True" HorizontalOptions="End" VerticalOptions="CenterAndExpand" Grid.Row="4" Grid.Column="1"></Switch>
+                <StackLayout Grid.Row="7"
+                       Grid.Column="1"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="StartAndExpand">
+                <Label Text="Forget Password"
+                       FontSize="Small"
+                       TextColor="White"
+                       Style="{DynamicResource LabelStyle}"      
+                       />
+                </StackLayout>
+
+
+                <StackLayout  Grid.Row="7"
+                       Grid.Column="0"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand" >
+                <Label Text="Register"
+                       FontSize="Small"
+                       TextColor="White"
+                       Style="{DynamicResource LabelStyle}"    
+                       />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Grid.GestureRecognizers>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

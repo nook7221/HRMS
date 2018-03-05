@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMS.View.DashBoard">
+    <ContentPage.Content>
+        <StackLayout >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout HeightRequest="100"
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Padding="5,20,0,5"
+                             BackgroundColor="#546E7A">
+                        <Image Source="addnew.png"/>
+                        <Label 
+                        TextColor="White"
+                        Text="สร้างผู้ใช้งานใหม่" HorizontalOptions="Center"/>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Grid.GestureRecognizers>
+                    </StackLayout>
+                    <StackLayout HeightRequest="100"
+                             Grid.Row="0"
+                             Grid.Column="1"
+                             Padding="5,20,0,5"
+                             BackgroundColor="#6A1B9A">
+                        <Image Source="editnew"/>
+                        <Label 
+                        TextColor="White"
+                        Text="แก้ไขข้อมูลผู้ใช้งาน" HorizontalOptions="Center"/>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                        </Grid.GestureRecognizers>
+                    </StackLayout>
+
+                    <StackLayout HeightRequest="100"
+                             Grid.Row="1"
+                             Grid.Column="0"
+                             Padding="5,20,0,5"
+                             BackgroundColor="#00695C">
+                        <Image Source="list.png"/>
+                        <Label Text="คำร้องขอลา" HorizontalOptions="Center"
+                           TextColor="White"/>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                        </Grid.GestureRecognizers>
+                    </StackLayout>
+
+                    <StackLayout HeightRequest="100"
+                             Grid.Row="1"
+                             Grid.Column="1"       
+                             Padding="5,20,0,5"
+                             BackgroundColor="#512DA8">
+                        <Image Source="plist.png"/>
+                        <Label 
+                        TextColor="White"
+                        Text="รายการโครงการ" HorizontalOptions="Center"/>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                        </Grid.GestureRecognizers>
+                    </StackLayout>
+                </Grid>
+                <Grid Grid.Row="0" BackgroundColor="#bbdefb">
+                    <Grid HorizontalOptions="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Source="saitama2" HeightRequest="50" Aspect="AspectFit" Margin="0,10,0,10"></Image>
+                        <StackLayout Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="Monkey D Grapp" FontSize="20" TextColor="White" Style="{DynamicResource LabelStyle}"></Label>
+                            <Label Text="พลโทรกองทัพเรือ" FontSize="10" Margin="0,-10,0,0" TextColor="#ffe6e9" Style="{DynamicResource LabelStyle}"></Label>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

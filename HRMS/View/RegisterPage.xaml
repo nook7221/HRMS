@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMS.View.RegisterPage"
+             BackgroundColor="#F4F4F4">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+       
+        <StackLayout Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="StartAndExpand" Padding="20,15,0,15">
+                        <Label Text="Create an account" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <Label Text="UserName" 
+                   Grid.Row="1" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,10,0,5"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="username" 
+                   Placeholder="UserName" 
+                   Grid.Row="2" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+            <Label Text="Password" 
+                   Grid.Row="3" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,0,0,5"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="pass" 
+                   Placeholder="PassWord" 
+                   Grid.Row="4" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+            <Label Text="ConfirmPassword" 
+                   Grid.Row="5" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,0,0,5"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="confirmpass" 
+                   Placeholder="ConfirmPassword" 
+                   Grid.Row="6" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+            <Label Text="FirstName" 
+                   Grid.Row="7" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,0,0,5"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="fname" 
+                   Placeholder="FirstName" 
+                   Grid.Row="8" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+            <Label Text="LastName" 
+                   Grid.Row="9" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,0,0,5"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="lname" 
+                   Placeholder="LastName" 
+                   Grid.Row="10" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+                    <Label Text="PhoneNumber" 
+                   Grid.Row="11" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,0,0,5"
+                   VerticalOptions="Center"/>
+
+                    <Entry x:Name="tel" 
+                   Placeholder="PhoneNumber" 
+                   Grid.Row="12" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+                    <Label Text="E-mail" 
+                   Grid.Row="13" 
+                   Grid.Column="0" 
+                   TextColor="Black"
+                   Margin="20,0,0,5"
+                   VerticalOptions="Center"/>
+
+                    <Entry x:Name="email" 
+                   Placeholder="E-mail" 
+                   Grid.Row="14" 
+                   Grid.ColumnSpan="2"  
+                   Margin="22,-15,0,5"/>
+
+                    <Button Clicked="Button_Clicked"
+                            Text="Create an account"
+                            TextColor="White"
+                            HeightRequest="60"
+                            WidthRequest="200"
+                            BackgroundColor="#64b5f6"
+                        Grid.Row="15" 
+                        Grid.ColumnSpan="2"
+                        HorizontalOptions="Center"/>
+
+                </Grid>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

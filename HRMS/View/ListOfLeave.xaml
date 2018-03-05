@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HRMS.View.ListOfLeave"
+             Title="List of Leave">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ListLeave"
+                      ItemTapped="newslist_ItemTapped"
+                      RowHeight="140" HasUnevenRows="True"
+                        >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="Requested date" 
+                                       Grid.Row="0" 
+                                       Grid.Column="0"
+                                       HorizontalOptions="Start"
+                                       Margin="8,10,0,0"/>
+
+                                <Label Text="{Binding RequesDay}" 
+                                       Grid.Column="1"
+                                       Grid.Row="0"
+                                       HorizontalOptions="End"
+                                       Margin="0,10,8,0"/>
+
+                                <Label Text="Type of leave"
+                                       Grid.Column="0"
+                                       Grid.Row="1"
+                                       HorizontalOptions="Start"
+                                       Margin="8,0,0,0"/>
+
+                                <Label Text="{Binding TypeLeave}"
+                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       HorizontalOptions="End"
+                                      Margin="0,0,8,0" />
+
+                                <Label Text="Date"
+                                       Grid.Column="0"
+                                       Grid.Row="2"
+                                       HorizontalOptions="Start"
+                                       Margin="8,0,0,0"/>
+
+                                <Label Text="{Binding Day}"
+                                       Grid.Column="1"
+                                       Grid.Row="2"
+                                       HorizontalOptions="End"
+                                       Margin="0,0,8,0"/>
+
+                                <Label Text="Number of the day"
+                                       Grid.Column="0"
+                                       Grid.Row="3"
+                                       HorizontalOptions="Start"
+                                       Margin="8,0,0,0"/>
+
+                                <Label Text="{Binding CountDay}"
+                                       Grid.Column="1"
+                                       Grid.Row="3"
+                                       HorizontalOptions="End"
+                                       Margin="0,0,8,0"/>
+
+                                <Label Text="Note"
+                                       Grid.Column="0"
+                                       Grid.Row="4"
+                                       HorizontalOptions="Start"
+                                       Margin="8,0,0,0"/>
+
+                                <Label Text="{Binding Note}"
+                                       Grid.Column="1"
+                                       Grid.Row="4"
+                                       HorizontalOptions="End"
+                                       Margin="0,0,8,0"/>
+
+                                <Label Text="Status"
+                                       Grid.Column ="0"
+                                       Grid.Row="5"
+                                       HorizontalOptions="Start"
+                                       Margin="8,0,0,10"/>
+
+                                <Label Text="{Binding Status}"
+                                       Grid.Column="1"
+                                       Grid.Row="5"
+                                       HorizontalOptions="End"
+                                       Margin="0,0,8,10"/>
+
+                            </Grid>
+
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
