@@ -32,7 +32,9 @@ namespace HRMS.View
 
         private async void newslist_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            
+
+            var page = new OnLeaveDetailScreen();
+            await Navigation.PushAsync(page);
         }
     }
 }

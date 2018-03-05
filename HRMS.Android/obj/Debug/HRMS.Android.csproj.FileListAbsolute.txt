@@ -218,3 +218,4 @@ obj\Debug\linksrc\FormsViewGroup.dll.mdb
 obj\Debug\linksrc\Xamarin.Forms.Core.dll.mdb
 obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 obj\Debug\linksrc\Xamarin.Forms.Xaml.dll.mdb
+obj\Debug\linksrc\HRMS.pdb
